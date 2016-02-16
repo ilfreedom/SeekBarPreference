@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Sample</string>
+    <string name="hello_world">Click The Menu Button</string>
+    <string name="action_settings">Settings</string>
+
+    
+    <string name="prefer_xxx">xxx Setting</string>
+    <string name="prefer_size_titile">xxx Size</string>
+    <string name="prefer_size_summary">Size:\t</string>
+    
+</resources>

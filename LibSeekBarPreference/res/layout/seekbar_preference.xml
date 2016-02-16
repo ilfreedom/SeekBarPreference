@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:paddingLeft="20dp"
+	android:paddingTop="20dp"
+	android:paddingRight="20dp"
+	android:paddingBottom="20dp">
+
+	<RelativeLayout android:id="@+id/RelativeLayout01"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent">
+			<TextView android:id="@+id/SeekBarMin" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:layout_alignParentLeft="true"
+				android:textSize="18sp"
+				android:text=""/>
+				
+			<TextView android:id="@+id/SeekBarVal"
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content" 
+				android:layout_centerHorizontal="true"
+				android:textSize="18sp"
+				android:text=""/>
+
+			<TextView android:id="@+id/SeekBarMax" 
+				android:layout_width="wrap_content" 
+				android:layout_height="wrap_content"
+				android:layout_alignParentRight="true"
+				android:textSize="18sp" 
+				android:text=""/>
+
+	</RelativeLayout>
+	
+   <SeekBar android:id="@+id/SeekBar_paith_width" 
+       android:layout_width="fill_parent"
+       android:layout_height="wrap_content"
+       android:paddingLeft="20dp"
+       android:paddingRight="20dp"/>
+	
+</LinearLayout>

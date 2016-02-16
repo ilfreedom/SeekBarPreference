@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- for SeekBarPrefer -->
+    <declare-styleable name="com.zj.widget.SeekBarPreference">   
+        <attr name="barmin" format="integer"/>
+        <attr name="barmax" format="integer"/>
+        <attr name="barinit" format="integer"/>
+    </declare-styleable>
+        
+</resources>

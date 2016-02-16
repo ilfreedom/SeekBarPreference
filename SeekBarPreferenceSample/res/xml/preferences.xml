@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android" 
+  xmlns:zjwidget="http://schemas.android.com/apk/res/com.example.seekbarpreferencesample"
+  xmlns:custom="http://schemas.android.com/apk/res/com.example.seekbarpreferencesample"> 
+  
+    <PreferenceCategory android:title="@string/prefer_xxx">
+    	
+    	<com.zj.app.widget.SeekBarPreference 
+    	    android:dialogTitle="@string/prefer_size_titile" 
+    	    android:title="@string/prefer_size_titile" 
+    	    android:summary="@string/prefer_size_summary" 
+    	    android:key="size" 
+    	    zjwidget:barinit="35" 
+            zjwidget:barmin="20" 
+            zjwidget:barmax="60"/>
+    </PreferenceCategory>
+    
+</PreferenceScreen>
