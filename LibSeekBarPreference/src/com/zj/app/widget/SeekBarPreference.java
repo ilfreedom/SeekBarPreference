@@ -21,9 +21,9 @@ public class SeekBarPreference extends DialogPreference implements SeekBar.OnSee
 	private TextView mBarValue;
 	private TextView mBarMinValue;
 	private TextView mBarMaxValue;
-	private int mMaxVal=70;
-	private int mMinVal=1;
-	private int mInitVal=3;
+	private int mMaxVal;
+	private int mMinVal;
+	private int mInitVal;
 	private int mValue;
 		
 	public SeekBarPreference(Context context, AttributeSet attrs) {
@@ -31,9 +31,9 @@ public class SeekBarPreference extends DialogPreference implements SeekBar.OnSee
 		mContext = context;
 		
 		TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.com_zj_widget_SeekBarPreference);
-		mMinVal = typedArray.getInt(R.styleable.com_zj_widget_SeekBarPreference_barmin, 1);
+		mMinVal = typedArray.getInt(R.styleable.com_zj_widget_SeekBarPreference_barmin, 20);
 		mMaxVal = typedArray.getInt(R.styleable.com_zj_widget_SeekBarPreference_barmax, 70);
-		mInitVal = typedArray.getInt(R.styleable.com_zj_widget_SeekBarPreference_barinit, 3);
+		mInitVal = typedArray.getInt(R.styleable.com_zj_widget_SeekBarPreference_barinit, 30);
 		setInitValue(mInitVal);
 	}
 	
@@ -72,9 +72,9 @@ public class SeekBarPreference extends DialogPreference implements SeekBar.OnSee
 		mSeekBar.setMax((mMaxVal-mMinVal));
 		mSeekBar.setProgress(mValue - mMinVal);
 		mBarMinValue = (TextView) seekbarView.findViewById(R.id.SeekBarMin);
-		//mBarMinValue.setText(""+ mMinVal);
+		mBarMinValue.setText(""+ mMinVal);
 		mBarMaxValue = (TextView) seekbarView.findViewById(R.id.SeekBarMax);
-		//mBarMaxValue.setText(""+ mMaxVal);
+		mBarMaxValue.setText(""+ mMaxVal);
 		mBarValue = (TextView) seekbarView.findViewById(R.id.SeekBarVal);
 		mBarValue.setText((mSeekBar.getProgress()+mMinVal)+"");
 	}
